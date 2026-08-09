@@ -1,7 +1,7 @@
 ---
 description: Implementa el backend local Node.js y Express de Worship, incluyendo API REST, JSON atómico, actividades y sincronización manual con Google Calendar.
 mode: subagent
-model: opencode-go/deepseek-v4-pro
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: allow
   bash: allow

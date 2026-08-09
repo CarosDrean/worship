@@ -66,13 +66,9 @@ export default function Calendar() {
 
 	const activitiesByDate = useMemo(() => {
 		const map = {};
-		const list = Array.isArray(data) ? data : data?.activities || [];
-		list.forEach((a) => {
-			const date = a.date?.slice(0, 10);
-			if (date) {
-				if (!map[date]) map[date] = [];
-				map[date].push(a);
-			}
+		const days = data?.days || {};
+		Object.entries(days).forEach(([date, acts]) => {
+			if (Array.isArray(acts) && acts.length > 0) map[date] = acts;
 		});
 		return map;
 	}, [data]);

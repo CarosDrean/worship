@@ -1,7 +1,7 @@
 ---
 description: Implementa tareas del frontend React + Vite de Worship: dashboard, calendario, actividades, asistencia, frases, temas y resolución visual de conflictos.
 mode: subagent
-model: opencode-go/deepseek-v4-pro
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: allow
   bash: allow

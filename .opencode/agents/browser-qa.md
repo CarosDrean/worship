@@ -1,7 +1,7 @@
 ---
 description: Valida Worship como usuario final en Chrome DevTools: actividades, asistencia, calendario, dashboard, responsive, temas y conflictos de Google Calendar.
 mode: subagent
-model: opencode-go/deepseek-v4-pro
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: deny
   bash: allow

@@ -1,7 +1,7 @@
 ---
 description: Corrige de forma mínima los fallos reportados en Worship por QA o validación técnica, respetando la separación React/backend y la integridad de los JSON.
 mode: subagent
-model: opencode-go/deepseek-v4-pro
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: allow
   bash: allow

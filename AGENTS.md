@@ -20,7 +20,16 @@ Aplicacion local en espanol para gestionar cultos, ayunos, vigilias y otras acti
 - La interfaz, errores, logs, comentarios y documentacion deben estar en espanol.
 - No introducir una dependencia obligatoria de IA para generar frases.
 
-Cuando se cree la estructura del proyecto, actualizar esta seccion con los comandos reales de desarrollo, build, validacion y los puertos definitivos. No inventar comandos mientras no existan en `package.json`.
+Comandos reales (monorepo pnpm):
+
+- `pnpm install --frozen-lockfile` instala backend y frontend de forma reproducible.
+- `pnpm dev` inicia backend (puerto 3001) y frontend (puerto 5173) en paralelo.
+- `pnpm server` inicia solo el backend.
+- `pnpm build` compila el frontend con Vite.
+- `pnpm check` es la puerta de validacion: typecheck + lint (Biome) + auditoria de dependencias.
+- `pnpm audit --audit-level high` comprueba vulnerabilidades de dependencias.
+- Gestor de paquetes: `pnpm@11.20.0` (ver `package.json`). Usar siempre pnpm, no npm.
+- Workspaces `@worship/backend` y `@worship/frontend`. Los datos JSON viven en `backend/data/` y no se versionan.
 
 ## Reglas de datos
 

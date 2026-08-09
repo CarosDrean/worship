@@ -1,7 +1,7 @@
 ---
 description: Ejecuta la validación técnica de Worship: build, arranque local, API REST, persistencia JSON, importación/exportación y regresiones de sincronización.
 mode: subagent
-model: opencode-go/deepseek-v4-pro
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: deny
   bash: allow

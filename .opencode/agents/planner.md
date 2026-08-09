@@ -1,7 +1,7 @@
 ---
 description: Planifica Worship a partir de ROADMAP.md, definiendo arquitectura, tareas MVP, contratos y criterios de aceptación sin implementar código.
 mode: subagent
-model: opencode-go/deepseek-v4-pro
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: deny
   bash: deny
