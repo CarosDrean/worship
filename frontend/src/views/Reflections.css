@@ -1,0 +1,74 @@
+.reflections-view {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.reflections-view__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
+
+.reflections-view__header h1 {
+	margin: 0;
+}
+
+.reflections-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 0.75rem;
+}
+
+.reflection-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	padding: 1.15rem;
+}
+
+.reflection-card__title {
+	font-size: 1.05rem;
+	margin: 0;
+}
+
+.reflection-card__date {
+	font-size: 0.8rem;
+	color: var(--color-text-secondary);
+}
+
+.reflection-card__content {
+	font-size: 0.9rem;
+	color: var(--color-text);
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	line-height: 1.5;
+}
+
+.reflection-card__actions {
+	display: flex;
+	gap: 0.25rem;
+	margin-top: 0.25rem;
+}
+
+.reflection-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.reflection-form__actions {
+	display: flex;
+	gap: 0.75rem;
+	justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+	.reflections-grid {
+		grid-template-columns: 1fr;
+	}
+}

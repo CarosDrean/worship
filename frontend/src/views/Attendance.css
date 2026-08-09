@@ -1,0 +1,53 @@
+.attendance-view {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.attendance-view__header h1 {
+	margin: 0;
+}
+
+.attendance-view__filters {
+	max-width: 300px;
+}
+
+.attendance-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.attendance-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem 1.15rem;
+}
+
+.attendance-item__title {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.attendance-item__date {
+	font-size: 0.85rem;
+	color: var(--color-text-secondary);
+}
+
+.attendance-item__status {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.attendance-item__extra {
+	font-size: 0.8rem;
+	color: var(--color-text-secondary);
+}
+
+.attendance-item__notes {
+	font-size: 0.85rem;
+	color: var(--color-text-secondary);
+	font-style: italic;
+}

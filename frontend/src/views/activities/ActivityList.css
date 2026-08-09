@@ -1,0 +1,103 @@
+.activity-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.activity-list__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
+
+.activity-list__header h1 {
+	margin: 0;
+}
+
+.activity-list__filters {
+	display: flex;
+	gap: 0.75rem;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.activity-list__filters > * {
+	flex: 1;
+	min-width: 180px;
+}
+
+.activity-list__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 0.75rem;
+}
+
+.activity-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1.15rem;
+}
+
+.activity-card__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.activity-card__actions {
+	display: flex;
+	gap: 0.25rem;
+}
+
+.activity-card__action-btn {
+	width: 30px;
+	height: 30px;
+	border-radius: var(--radius-sm);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+	transition: background var(--transition-fast);
+}
+.activity-card__action-btn:hover {
+	background: var(--color-bg-hover);
+}
+
+.activity-card__title {
+	font-size: 1.05rem;
+	margin: 0;
+}
+
+.activity-card__date {
+	font-size: 0.85rem;
+	color: var(--color-text-secondary);
+}
+
+.activity-card__location {
+	font-size: 0.85rem;
+	color: var(--color-text-secondary);
+}
+
+.activity-card__desc {
+	font-size: 0.88rem;
+	color: var(--color-text);
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.activity-card__footer {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 0.25rem;
+}
+
+@media (max-width: 767px) {
+	.activity-list__grid {
+		grid-template-columns: 1fr;
+	}
+}

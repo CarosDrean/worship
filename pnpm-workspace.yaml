@@ -1,0 +1,10 @@
+packages:
+  - backend
+  - frontend
+
+# Retrasa la instalacion de paquetes nuevos para reducir el riesgo de publicaciones maliciosas.
+minimumReleaseAge: 4320
+trustPolicy: no-downgrade
+
+overrides:
+  path-to-regexp@<0.1.13: 0.1.13

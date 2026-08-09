@@ -1,0 +1,191 @@
+.calendar-view {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.calendar-view__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.calendar-view__header h1 {
+	margin: 0;
+}
+
+.calendar-card {
+	padding: 1rem;
+}
+
+.calendar-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.calendar-nav__title {
+	font-family: var(--font-serif);
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+.calendar-nav__btn {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.1rem;
+	color: var(--color-text);
+	transition: background var(--transition-fast);
+}
+.calendar-nav__btn:hover {
+	background: var(--color-bg-hover);
+}
+
+.calendar-grid {
+	display: flex;
+	flex-direction: column;
+}
+
+.calendar-weekdays {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-weekday {
+	text-align: center;
+	font-size: 0.78rem;
+	font-weight: 600;
+	color: var(--color-text-secondary);
+	text-transform: uppercase;
+	padding: 0.5rem 0;
+}
+
+.calendar-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 2px;
+}
+
+.calendar-day {
+	aspect-ratio: 1;
+	padding: 0.35rem;
+	border-radius: var(--radius-sm);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.15rem;
+	cursor: default;
+	font-size: 0.85rem;
+	min-height: 60px;
+}
+
+.calendar-day--empty {
+	background: transparent;
+}
+
+.calendar-day--today {
+	background: var(--color-accent-salvia-light);
+	font-weight: 600;
+}
+
+.calendar-day__num {
+	font-size: 0.85rem;
+	color: var(--color-text-heading);
+}
+
+.calendar-day__dots {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+	justify-content: center;
+}
+
+.calendar-dot {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
+.calendar-dot--culto {
+	background: var(--color-accent-salvia);
+}
+.calendar-dot--ayuno {
+	background: var(--color-accent-terracota);
+}
+.calendar-dot--vigilia {
+	background: var(--color-primary);
+}
+.calendar-dot--estudio_biblico {
+	background: var(--color-accent-dorado);
+}
+.calendar-dot--reunion {
+	background: #7b5ea7;
+}
+.calendar-dot--evangelismo {
+	background: var(--color-success);
+}
+.calendar-dot--otro {
+	background: var(--color-text-secondary);
+}
+
+.calendar-day__more {
+	font-size: 0.6rem;
+	color: var(--color-text-secondary);
+}
+
+.calendar-activities {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.calendar-date-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.calendar-date-label {
+	font-size: 0.85rem;
+	color: var(--color-text-secondary);
+	margin: 0;
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid var(--color-border-light);
+}
+
+.calendar-activity-item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.4rem 0;
+	font-size: 0.9rem;
+}
+
+.calendar-activity-title {
+	font-weight: 500;
+}
+
+.calendar-activity-time {
+	font-size: 0.8rem;
+	color: var(--color-text-secondary);
+}
+
+@media (max-width: 767px) {
+	.calendar-day {
+		aspect-ratio: auto;
+		min-height: 48px;
+		font-size: 0.78rem;
+	}
+	.calendar-day__num {
+		font-size: 0.78rem;
+	}
+	.calendar-weekday {
+		font-size: 0.7rem;
+	}
+}

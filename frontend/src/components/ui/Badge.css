@@ -1,0 +1,54 @@
+.badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.15rem 0.6rem;
+	border-radius: 999px;
+	font-size: 0.78rem;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.badge--salvia {
+	background: var(--color-accent-salvia-light);
+	color: var(--color-accent-salvia);
+}
+.badge--terracota {
+	background: var(--color-accent-terracota-light);
+	color: var(--color-accent-terracota);
+}
+.badge--azul {
+	background: var(--color-info-bg);
+	color: var(--color-info);
+}
+.badge--dorado {
+	background: var(--color-accent-dorado-light);
+	color: var(--color-accent-dorado);
+}
+.badge--purpura {
+	background: #f0e6f6;
+	color: #7b5ea7;
+}
+.badge--verde {
+	background: var(--color-success-bg);
+	color: var(--color-success);
+}
+.badge--gris {
+	background: var(--color-bg-hover);
+	color: var(--color-text-secondary);
+}
+.badge--success {
+	background: var(--color-success-bg);
+	color: var(--color-success);
+}
+.badge--error {
+	background: var(--color-error-bg);
+	color: var(--color-error);
+}
+.badge--warning {
+	background: var(--color-warning-bg);
+	color: var(--color-warning);
+}
+.badge--info {
+	background: var(--color-info-bg);
+	color: var(--color-info);
+}
